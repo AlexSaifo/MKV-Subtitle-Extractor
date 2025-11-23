@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKV Subtitle Extractor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .upload-form {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .file-input {
+            margin: 10px 0;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .instructions {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MKV Subtitle Extractor</h1>
+        <div class="instructions">
+            <h3>How to use:</h3>
+            <ol>
+                <li>Select an MKV video file from your computer</li>
+                <li>Click "Extract Subtitles"</li>
+                <li>Download the extracted subtitle files (ASS and SRT formats)</li>
+            </ol>
+            <p><strong>Note:</strong> This tool works locally on your computer for fast processing. Supports multiple subtitle tracks.</p>
+        </div>
+        
+        <form action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
+            <input type="file" name="file" accept=".mkv" required class="file-input">
+            <br>
+            <button type="submit" class="submit-btn">Extract Subtitles</button>
+        </form>
+    </div>
+</body>
+</html>
