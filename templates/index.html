@@ -3,43 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MKV Subtitle Extractor</title>
+    <title>MKV Media Processor</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 20px;
-            background-color: #f5f5f5;
         }
         .container {
             background-color: white;
-            padding: 30px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 15px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h1 {
             color: #333;
-            text-align: center;
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
         }
         .upload-form {
             text-align: center;
-            margin: 20px 0;
+            margin: 30px 0;
         }
         .file-input {
-            margin: 10px 0;
+            margin: 15px 0;
+            padding: 10px;
+            border: 2px dashed #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .file-input:hover {
+            border-color: #667eea;
+            background-color: #f0f0f0;
         }
         .submit-btn {
-            background-color: #4CAF50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 10px 20px;
+            padding: 15px 30px;
             border: none;
-            border-radius: 5px;
+            border-radius: 25px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
         }
         .submit-btn:hover {
-            background-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        .options {
+            text-align: left;
+            margin: 25px 0;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e9ecef;
+        }
+        .options label {
+            display: block;
+            margin: 8px 0;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .options select {
+            margin-left: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
         }
         .instructions {
             background-color: #e7f3ff;
@@ -51,21 +102,59 @@
 </head>
 <body>
     <div class="container">
-        <h1>MKV Subtitle Extractor</h1>
+        <div class="header">
+            <img src="/static/MKV Media Processor.png" alt="MKV Media Processor Logo" class="logo">
+            <h1>MKV Media Processor</h1>
+        </div>
         <div class="instructions">
             <h3>How to use:</h3>
             <ol>
                 <li>Select an MKV video file from your computer</li>
-                <li>Click "Extract Subtitles"</li>
-                <li>Download the extracted subtitle files (ASS and SRT formats)</li>
+                <li>Choose the operations you want: extract subtitles, extract audio, convert video</li>
+                <li>Optionally select AI translation for subtitles</li>
+                <li>Select output format and resolution if converting</li>
+                <li>Click "Process File"</li>
+                <li>Download the extracted or converted files</li>
             </ol>
-            <p><strong>Note:</strong> This tool works locally on your computer for fast processing. Supports multiple subtitle tracks.</p>
+            <p><strong>Note:</strong> This tool works locally on your computer for fast processing. Supports multiple tracks.</p>
         </div>
         
         <form action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
             <input type="file" name="file" accept=".mkv" required class="file-input">
             <br>
-            <button type="submit" class="submit-btn">Extract Subtitles</button>
+            <div class="options">
+                <label><input type="checkbox" name="extract_subtitles" checked> Extract Subtitles</label><br>
+                <label><input type="checkbox" name="extract_audio"> Extract Audio</label><br>
+                <label><input type="checkbox" name="convert_video"> Convert Video</label>
+                <select name="output_format">
+                    <option value="mp4">MP4</option>
+                    <option value="avi">AVI</option>
+                    <option value="mkv">MKV</option>
+                </select><br>
+                <label>Resolution: 
+                    <select name="resolution">
+                        <option value="original">Original</option>
+                        <option value="480p">480p</option>
+                        <option value="720p">720p</option>
+                        <option value="1080p">1080p</option>
+                    </select>
+                </label><br>
+                <label><input type="checkbox" name="translate_subtitles"> Translate Subtitles with AI</label>
+                <select name="target_lang">
+                    <option value="English">English</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="French">French</option>
+                    <option value="German">German</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Portuguese">Portuguese</option>
+                    <option value="Arabic">Arabic</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Korean">Korean</option>
+                </select><br>
+            </div>
+            <br>
+            <button type="submit" class="submit-btn">Process File</button>
         </form>
     </div>
 </body>

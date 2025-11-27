@@ -3,66 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subtitle Extraction Results</title>
+    <title>MKV Media Processor - Results</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 20px;
-            background-color: #f5f5f5;
         }
         .container {
             background-color: white;
-            padding: 30px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 15px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h1 {
             color: #333;
-            text-align: center;
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
         }
         .file-list {
-            margin: 20px 0;
+            margin: 30px 0;
         }
         .file-item {
-            background-color: #f9f9f9;
-            padding: 10px;
-            margin: 5px 0;
-            border-radius: 5px;
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        .file-item:hover {
+            background-color: #e9ecef;
         }
         .download-btn {
-            background-color: #2196F3;
-            color: white;
-            padding: 8px 16px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-        .download-btn:hover {
-            background-color: #0b7dda;
-        }
-        .back-btn {
-            display: inline-block;
-            background-color: #666;
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
             color: white;
             padding: 10px 20px;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(40, 167, 69, 0.3);
+        }
+        .download-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.5);
+        }
+        .back-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 20px;
+            margin-top: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(108, 117, 125, 0.3);
         }
         .back-btn:hover {
-            background-color: #555;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(108, 117, 125, 0.5);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Subtitle Extraction Complete</h1>
-        <p>Extracted subtitle files:</p>
+        <div class="header">
+            <img src="/static/MKV Media Processor.png" alt="MKV Media Processor Logo" class="logo">
+            <h1>MKV Media Processor - Complete</h1>
+        </div>
+        <p>Processed files:</p>
         <div class="file-list">
             {% for file in files %}
             <div class="file-item">

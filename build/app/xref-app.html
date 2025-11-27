@@ -15,7 +15,7 @@
 
 <div class="node">
   <a name="app.py"></a>
-  <a target="code" href="///C:/Users/Allufy/Desktop/One%20Piece/mkv_subtitle_extractor/app.py" type="text/plain"><tt>app.py</tt></a>
+  <a target="code" href="///C:/Users/Allufy/Documents/GitHub/MKV-Subtitle-Extractor/app.py" type="text/plain"><tt>app.py</tt></a>
 <span class="moduletype">Script</span>  <div class="import">
 imports:
     <a href="#_collections_abc">_collections_abc</a>
@@ -180,10 +180,12 @@ imports:
  &#8226;   <a href="#sre_parse">sre_parse</a>
  &#8226;   <a href="#stat">stat</a>
  &#8226;   <a href="#subprocess">subprocess</a>
+ &#8226;   <a href="#sys">sys</a>
  &#8226;   <a href="#tempfile">tempfile</a>
  &#8226;   <a href="#threading">threading</a>
  &#8226;   <a href="#time">time</a>
  &#8226;   <a href="#traceback">traceback</a>
+ &#8226;   <a href="#translate">translate</a>
  &#8226;   <a href="#types">types</a>
  &#8226;   <a href="#warnings">warnings</a>
  &#8226;   <a href="#weakref">weakref</a>
@@ -476,17 +478,6 @@ imported by:
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
     <a href="#asttokens.astroid_compat">asttokens.astroid_compat</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="'backports.functools_lru_cache'"></a>
-  <a target="code" href="" type="text/plain"><tt>'backports.functools_lru_cache'</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
-imported by:
-    <a href="#wcwidth.wcwidth">wcwidth.wcwidth</a>
 
   </div>
 
@@ -887,6 +878,17 @@ imported by:
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
     <a href="#cffi._shimmed_dist_utils">cffi._shimmed_dist_utils</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="'setuptools._vendor.backports.functools_lru_cache'"></a>
+  <a target="code" href="" type="text/plain"><tt>'setuptools._vendor.backports.functools_lru_cache'</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#wcwidth.wcwidth">wcwidth.wcwidth</a>
 
   </div>
 
@@ -9775,6 +9777,7 @@ imported by:
  &#8226;   <a href="#setuptools._vendor.wheel.vendored.packaging.specifiers">setuptools._vendor.wheel.vendored.packaging.specifiers</a>
  &#8226;   <a href="#threadpoolctl">threadpoolctl</a>
  &#8226;   <a href="#tornado.websocket">tornado.websocket</a>
+ &#8226;   <a href="#translate.providers.base">translate.providers.base</a>
  &#8226;   <a href="#trio._abc">trio._abc</a>
  &#8226;   <a href="#trio._util">trio._util</a>
  &#8226;   <a href="#trio.testing._raises_group">trio.testing._raises_group</a>
@@ -11629,34 +11632,16 @@ imported by:
 
 <div class="node">
   <a name="backports"></a>
-  <a target="code" href="///C:/Users/Allufy/AppData/Roaming/Python/Python313/site-packages/setuptools/_vendor/backports/__init__.py" type="text/plain"><tt>backports</tt></a>
-<span class="moduletype">Package</span>  <div class="import">
-imports:
-    <a href="#backports.tarfile">backports.tarfile</a>
- &#8226;   <a href="#pkgutil">pkgutil</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#backports.tarfile">backports.tarfile</a>
- &#8226;   <a href="#setuptools._vendor.jaraco.context">setuptools._vendor.jaraco.context</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="backports.tarfile"></a>
-  <a target="code" href="" type="text/plain"><tt>backports.tarfile</tt></a>
+  <a target="code" href="" type="text/plain"><tt>backports</tt></a>
 <span class="moduletype">AliasNode</span>  <div class="import">
 imports:
-    <a href="#backports">backports</a>
+    <a href="#setuptools._vendor.backports">setuptools._vendor.backports</a>
  &#8226;   <a href="#setuptools._vendor.backports.tarfile">setuptools._vendor.backports.tarfile</a>
 
   </div>
   <div class="import">
 imported by:
-    <a href="#backports">backports</a>
+    <a href="#setuptools._vendor.backports.tarfile">setuptools._vendor.backports.tarfile</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.context">setuptools._vendor.jaraco.context</a>
 
   </div>
@@ -26222,70 +26207,17 @@ imported by:
 
 <div class="node">
   <a name="jaraco"></a>
-  <a target="code" href="-" type="text/plain"><tt>jaraco</tt></a>
-<span class="moduletype">NamespacePackage</span>  <div class="import">
-imported by:
-    <a href="#jaraco.context">jaraco.context</a>
- &#8226;   <a href="#jaraco.functools">jaraco.functools</a>
- &#8226;   <a href="#jaraco.text">jaraco.text</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="jaraco.context"></a>
-  <a target="code" href="" type="text/plain"><tt>jaraco.context</tt></a>
+  <a target="code" href="" type="text/plain"><tt>jaraco</tt></a>
 <span class="moduletype">AliasNode</span>  <div class="import">
 imports:
-    <a href="#jaraco">jaraco</a>
- &#8226;   <a href="#setuptools._vendor.jaraco.context">setuptools._vendor.jaraco.context</a>
+    <a href="#setuptools._vendor.jaraco">setuptools._vendor.jaraco</a>
 
   </div>
   <div class="import">
 imported by:
-    <a href="#setuptools._vendor.jaraco.text">setuptools._vendor.jaraco.text</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="jaraco.functools"></a>
-  <a target="code" href="" type="text/plain"><tt>jaraco.functools</tt></a>
-<span class="moduletype">AliasNode</span>  <div class="import">
-imports:
-    <a href="#jaraco">jaraco</a>
+    <a href="#setuptools._vendor.jaraco.context">setuptools._vendor.jaraco.context</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.functools">setuptools._vendor.jaraco.functools</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#setuptools._distutils._modified">setuptools._distutils._modified</a>
- &#8226;   <a href="#setuptools._distutils.sysconfig">setuptools._distutils.sysconfig</a>
- &#8226;   <a href="#setuptools._distutils.util">setuptools._distutils.util</a>
- &#8226;   <a href="#setuptools._entry_points">setuptools._entry_points</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.text">setuptools._vendor.jaraco.text</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="jaraco.text"></a>
-  <a target="code" href="" type="text/plain"><tt>jaraco.text</tt></a>
-<span class="moduletype">AliasNode</span>  <div class="import">
-imports:
-    <a href="#jaraco">jaraco</a>
- &#8226;   <a href="#setuptools._vendor.jaraco.text">setuptools._vendor.jaraco.text</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#pkg_resources">pkg_resources</a>
- &#8226;   <a href="#setuptools._entry_points">setuptools._entry_points</a>
- &#8226;   <a href="#setuptools._reqs">setuptools._reqs</a>
- &#8226;   <a href="#setuptools.command._requirestxt">setuptools.command._requirestxt</a>
 
   </div>
 
@@ -29711,6 +29643,7 @@ imported by:
  &#8226;   <a href="#jupyter_client.kernelspec">jupyter_client.kernelspec</a>
  &#8226;   <a href="#jupyter_client.multikernelmanager">jupyter_client.multikernelmanager</a>
  &#8226;   <a href="#jupyter_client.session">jupyter_client.session</a>
+ &#8226;   <a href="#libretranslatepy.api">libretranslatepy.api</a>
  &#8226;   <a href="#logging.config">logging.config</a>
  &#8226;   <a href="#matplotlib.backends.backend_webagg">matplotlib.backends.backend_webagg</a>
  &#8226;   <a href="#matplotlib.backends.backend_webagg_core">matplotlib.backends.backend_webagg_core</a>
@@ -29731,6 +29664,9 @@ imported by:
  &#8226;   <a href="#tornado.escape">tornado.escape</a>
  &#8226;   <a href="#traitlets.config.application">traitlets.config.application</a>
  &#8226;   <a href="#traitlets.config.loader">traitlets.config.loader</a>
+ &#8226;   <a href="#translate.providers.deepl">translate.providers.deepl</a>
+ &#8226;   <a href="#translate.providers.microsoft">translate.providers.microsoft</a>
+ &#8226;   <a href="#translate.providers.yandex">translate.providers.yandex</a>
  &#8226;   <a href="#urllib3._request_methods">urllib3._request_methods</a>
  &#8226;   <a href="#urllib3.contrib.emscripten.fetch">urllib3.contrib.emscripten.fetch</a>
  &#8226;   <a href="#urllib3.contrib.emscripten.response">urllib3.contrib.emscripten.response</a>
@@ -31115,6 +31051,44 @@ imports:
   <div class="import">
 imported by:
     <a href="#kiwisolver">kiwisolver</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="libretranslatepy"></a>
+  <a target="code" href="///C:/Users/Allufy/AppData/Roaming/Python/Python313/site-packages/libretranslatepy/__init__.py" type="text/plain"><tt>libretranslatepy</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#libretranslatepy.api">libretranslatepy.api</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#libretranslatepy.api">libretranslatepy.api</a>
+ &#8226;   <a href="#translate.providers.libre">translate.providers.libre</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="libretranslatepy.api"></a>
+  <a target="code" href="///C:/Users/Allufy/AppData/Roaming/Python/Python313/site-packages/libretranslatepy/api.py" type="text/plain"><tt>libretranslatepy.api</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#json">json</a>
+ &#8226;   <a href="#libretranslatepy">libretranslatepy</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#urllib">urllib</a>
+ &#8226;   <a href="#urllib.parse">urllib.parse</a>
+ &#8226;   <a href="#urllib.request">urllib.request</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#libretranslatepy">libretranslatepy</a>
 
   </div>
 
@@ -45937,7 +45911,6 @@ imports:
  &#8226;   <a href="#importlib.machinery">importlib.machinery</a>
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#io">io</a>
- &#8226;   <a href="#jaraco.text">jaraco.text</a>
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#operator">operator</a>
@@ -45965,6 +45938,7 @@ imports:
  &#8226;   <a href="#plistlib">plistlib</a>
  &#8226;   <a href="#posixpath">posixpath</a>
  &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#setuptools._vendor.jaraco.text">setuptools._vendor.jaraco.text</a>
  &#8226;   <a href="#stat">stat</a>
  &#8226;   <a href="#sys">sys</a>
  &#8226;   <a href="#sysconfig">sysconfig</a>
@@ -46011,8 +45985,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#backports">backports</a>
- &#8226;   <a href="#dateutil.zoneinfo">dateutil.zoneinfo</a>
+    <a href="#dateutil.zoneinfo">dateutil.zoneinfo</a>
  &#8226;   <a href="#pkg_resources">pkg_resources</a>
  &#8226;   <a href="#pydoc">pydoc</a>
  &#8226;   <a href="#pyi_rth_pkgutil.py">pyi_rth_pkgutil.py</a>
@@ -60090,6 +60063,11 @@ imported by:
  &#8226;   <a href="#requests.status_codes">requests.status_codes</a>
  &#8226;   <a href="#requests.structures">requests.structures</a>
  &#8226;   <a href="#requests.utils">requests.utils</a>
+ &#8226;   <a href="#translate.providers.base">translate.providers.base</a>
+ &#8226;   <a href="#translate.providers.deepl">translate.providers.deepl</a>
+ &#8226;   <a href="#translate.providers.microsoft">translate.providers.microsoft</a>
+ &#8226;   <a href="#translate.providers.mymemory_translated">translate.providers.mymemory_translated</a>
+ &#8226;   <a href="#translate.providers.yandex">translate.providers.yandex</a>
 
   </div>
 
@@ -60974,11 +60952,11 @@ imports:
  &#8226;   <a href="#__future__">__future__</a>
  &#8226;   <a href="#distutils">distutils</a>
  &#8226;   <a href="#functools">functools</a>
- &#8226;   <a href="#jaraco.functools">jaraco.functools</a>
  &#8226;   <a href="#os.path">os.path</a>
  &#8226;   <a href="#setuptools._distutils">setuptools._distutils</a>
  &#8226;   <a href="#setuptools._distutils.compat.py39">setuptools._distutils.compat.py39</a>
  &#8226;   <a href="#setuptools._distutils.errors">setuptools._distutils.errors</a>
+ &#8226;   <a href="#setuptools._vendor.jaraco.functools">setuptools._vendor.jaraco.functools</a>
  &#8226;   <a href="#typing">typing</a>
 
   </div>
@@ -61823,7 +61801,6 @@ imports:
     <a href="#__future__">__future__</a>
  &#8226;   <a href="#distutils">distutils</a>
  &#8226;   <a href="#functools">functools</a>
- &#8226;   <a href="#jaraco.functools">jaraco.functools</a>
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#re">re</a>
@@ -61834,6 +61811,7 @@ imports:
  &#8226;   <a href="#setuptools._distutils.errors">setuptools._distutils.errors</a>
  &#8226;   <a href="#setuptools._distutils.text_file">setuptools._distutils.text_file</a>
  &#8226;   <a href="#setuptools._distutils.util">setuptools._distutils.util</a>
+ &#8226;   <a href="#setuptools._vendor.jaraco.functools">setuptools._vendor.jaraco.functools</a>
  &#8226;   <a href="#sys">sys</a>
  &#8226;   <a href="#sysconfig">sysconfig</a>
  &#8226;   <a href="#typing">typing</a>
@@ -61883,7 +61861,6 @@ imports:
  &#8226;   <a href="#distutils">distutils</a>
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
- &#8226;   <a href="#jaraco.functools">jaraco.functools</a>
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#pwd">pwd</a>
@@ -61895,6 +61872,7 @@ imports:
  &#8226;   <a href="#setuptools._distutils.errors">setuptools._distutils.errors</a>
  &#8226;   <a href="#setuptools._distutils.spawn">setuptools._distutils.spawn</a>
  &#8226;   <a href="#setuptools._distutils.sysconfig">setuptools._distutils.sysconfig</a>
+ &#8226;   <a href="#setuptools._vendor.jaraco.functools">setuptools._vendor.jaraco.functools</a>
  &#8226;   <a href="#string">string</a>
  &#8226;   <a href="#subprocess">subprocess</a>
  &#8226;   <a href="#sys">sys</a>
@@ -61978,13 +61956,13 @@ imported by:
 imports:
     <a href="#functools">functools</a>
  &#8226;   <a href="#itertools">itertools</a>
- &#8226;   <a href="#jaraco.functools">jaraco.functools</a>
- &#8226;   <a href="#jaraco.text">jaraco.text</a>
  &#8226;   <a href="#more_itertools">more_itertools</a>
  &#8226;   <a href="#operator">operator</a>
  &#8226;   <a href="#setuptools">setuptools</a>
  &#8226;   <a href="#setuptools._importlib">setuptools._importlib</a>
  &#8226;   <a href="#setuptools._itertools">setuptools._itertools</a>
+ &#8226;   <a href="#setuptools._vendor.jaraco.functools">setuptools._vendor.jaraco.functools</a>
+ &#8226;   <a href="#setuptools._vendor.jaraco.text">setuptools._vendor.jaraco.text</a>
  &#8226;   <a href="#setuptools.errors">setuptools.errors</a>
 
   </div>
@@ -62126,9 +62104,9 @@ imports:
     <a href="#'collections.abc'">'collections.abc'</a>
  &#8226;   <a href="#__future__">__future__</a>
  &#8226;   <a href="#functools">functools</a>
- &#8226;   <a href="#jaraco.text">jaraco.text</a>
  &#8226;   <a href="#packaging.requirements">packaging.requirements</a>
  &#8226;   <a href="#setuptools">setuptools</a>
+ &#8226;   <a href="#setuptools._vendor.jaraco.text">setuptools._vendor.jaraco.text</a>
  &#8226;   <a href="#typing">typing</a>
  &#8226;   <a href="#typing_extensions">typing_extensions</a>
 
@@ -62224,7 +62202,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#setuptools._vendor.backports.tarfile">setuptools._vendor.backports.tarfile</a>
+    <a href="#backports">backports</a>
 
   </div>
 
@@ -62236,6 +62214,7 @@ imported by:
 <span class="moduletype">Package</span>  <div class="import">
 imports:
     <a href="#argparse">argparse</a>
+ &#8226;   <a href="#backports">backports</a>
  &#8226;   <a href="#builtins">builtins</a>
  &#8226;   <a href="#bz2">bz2</a>
  &#8226;   <a href="#copy">copy</a>
@@ -62246,7 +62225,6 @@ imports:
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#pwd">pwd</a>
  &#8226;   <a href="#re">re</a>
- &#8226;   <a href="#setuptools._vendor.backports">setuptools._vendor.backports</a>
  &#8226;   <a href="#setuptools._vendor.backports.tarfile.compat.py38">setuptools._vendor.backports.tarfile.compat.py38</a>
  &#8226;   <a href="#shutil">shutil</a>
  &#8226;   <a href="#stat">stat</a>
@@ -62259,8 +62237,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#backports.tarfile">backports.tarfile</a>
+    <a href="#backports">backports</a>
  &#8226;   <a href="#setuptools._vendor.backports.tarfile.compat">setuptools._vendor.backports.tarfile.compat</a>
+ &#8226;   <a href="#setuptools._vendor.jaraco.context">setuptools._vendor.jaraco.context</a>
 
   </div>
 
@@ -62309,8 +62288,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#setuptools._vendor.jaraco.context">setuptools._vendor.jaraco.context</a>
- &#8226;   <a href="#setuptools._vendor.jaraco.functools">setuptools._vendor.jaraco.functools</a>
+    <a href="#jaraco">jaraco</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.text">setuptools._vendor.jaraco.text</a>
 
   </div>
@@ -62324,12 +62302,12 @@ imported by:
 imports:
     <a href="#__future__">__future__</a>
  &#8226;   <a href="#backports">backports</a>
- &#8226;   <a href="#backports.tarfile">backports.tarfile</a>
  &#8226;   <a href="#contextlib">contextlib</a>
  &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#jaraco">jaraco</a>
  &#8226;   <a href="#operator">operator</a>
  &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#setuptools._vendor.jaraco">setuptools._vendor.jaraco</a>
+ &#8226;   <a href="#setuptools._vendor.backports.tarfile">setuptools._vendor.backports.tarfile</a>
  &#8226;   <a href="#shutil">shutil</a>
  &#8226;   <a href="#subprocess">subprocess</a>
  &#8226;   <a href="#sys">sys</a>
@@ -62342,7 +62320,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#jaraco.context">jaraco.context</a>
+    <a href="#setuptools._vendor.jaraco.text">setuptools._vendor.jaraco.text</a>
 
   </div>
 
@@ -62357,9 +62335,9 @@ imports:
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#jaraco">jaraco</a>
  &#8226;   <a href="#more_itertools">more_itertools</a>
  &#8226;   <a href="#operator">operator</a>
- &#8226;   <a href="#setuptools._vendor.jaraco">setuptools._vendor.jaraco</a>
  &#8226;   <a href="#time">time</a>
  &#8226;   <a href="#types">types</a>
  &#8226;   <a href="#warnings">warnings</a>
@@ -62367,7 +62345,11 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#jaraco.functools">jaraco.functools</a>
+    <a href="#setuptools._distutils._modified">setuptools._distutils._modified</a>
+ &#8226;   <a href="#setuptools._distutils.sysconfig">setuptools._distutils.sysconfig</a>
+ &#8226;   <a href="#setuptools._distutils.util">setuptools._distutils.util</a>
+ &#8226;   <a href="#setuptools._entry_points">setuptools._entry_points</a>
+ &#8226;   <a href="#setuptools._vendor.jaraco.text">setuptools._vendor.jaraco.text</a>
 
   </div>
 
@@ -62382,16 +62364,21 @@ imports:
  &#8226;   <a href="#importlib.resources">importlib.resources</a>
  &#8226;   <a href="#importlib_resources">importlib_resources</a>
  &#8226;   <a href="#itertools">itertools</a>
- &#8226;   <a href="#jaraco.context">jaraco.context</a>
- &#8226;   <a href="#jaraco.functools">jaraco.functools</a>
+ &#8226;   <a href="#jaraco">jaraco</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#setuptools._vendor.jaraco">setuptools._vendor.jaraco</a>
+ &#8226;   <a href="#setuptools._vendor.jaraco.context">setuptools._vendor.jaraco.context</a>
+ &#8226;   <a href="#setuptools._vendor.jaraco.functools">setuptools._vendor.jaraco.functools</a>
  &#8226;   <a href="#textwrap">textwrap</a>
 
   </div>
   <div class="import">
 imported by:
     <a href="#jaraco.text">jaraco.text</a>
+ &#8226;   <a href="#pkg_resources">pkg_resources</a>
+ &#8226;   <a href="#setuptools._entry_points">setuptools._entry_points</a>
+ &#8226;   <a href="#setuptools._reqs">setuptools._reqs</a>
+ &#8226;   <a href="#setuptools.command._requirestxt">setuptools.command._requirestxt</a>
 
   </div>
 
@@ -63510,10 +63497,10 @@ imports:
  &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#io">io</a>
  &#8226;   <a href="#itertools">itertools</a>
- &#8226;   <a href="#jaraco.text">jaraco.text</a>
  &#8226;   <a href="#packaging.requirements">packaging.requirements</a>
  &#8226;   <a href="#setuptools">setuptools</a>
  &#8226;   <a href="#setuptools._reqs">setuptools._reqs</a>
+ &#8226;   <a href="#setuptools._vendor.jaraco.text">setuptools._vendor.jaraco.text</a>
  &#8226;   <a href="#setuptools.command">setuptools.command</a>
  &#8226;   <a href="#typing">typing</a>
 
@@ -66038,6 +66025,7 @@ imported by:
  &#8226;   <a href="#_pyrepl.simple_interact">_pyrepl.simple_interact</a>
  &#8226;   <a href="#_pyrepl.windows_console">_pyrepl.windows_console</a>
  &#8226;   <a href="#_sitebuiltins">_sitebuiltins</a>
+ &#8226;   <a href="#app.py">app.py</a>
  &#8226;   <a href="#argparse">argparse</a>
  &#8226;   <a href="#ast">ast</a>
  &#8226;   <a href="#asttokens.asttokens">asttokens.asttokens</a>
@@ -66192,6 +66180,7 @@ imported by:
  &#8226;   <a href="#jupyter_client.ssh.tunnel">jupyter_client.ssh.tunnel</a>
  &#8226;   <a href="#jupyter_core.paths">jupyter_core.paths</a>
  &#8226;   <a href="#jupyter_core.utils">jupyter_core.utils</a>
+ &#8226;   <a href="#libretranslatepy.api">libretranslatepy.api</a>
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
@@ -66733,6 +66722,7 @@ imported by:
  &#8226;   <a href="#traitlets.config.application">traitlets.config.application</a>
  &#8226;   <a href="#traitlets.config.configurable">traitlets.config.configurable</a>
  &#8226;   <a href="#traitlets.utils.text">traitlets.utils.text</a>
+ &#8226;   <a href="#translate.translate">translate.translate</a>
  &#8226;   <a href="#trio.testing._raises_group">trio.testing._raises_group</a>
 
   </div>
@@ -69066,6 +69056,256 @@ imported by:
  &#8226;   <a href="#traitlets.config.configurable">traitlets.config.configurable</a>
  &#8226;   <a href="#traitlets.config.loader">traitlets.config.loader</a>
  &#8226;   <a href="#traitlets.traitlets">traitlets.traitlets</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="translate"></a>
+  <a target="code" href="///C:/Users/Allufy/AppData/Roaming/Python/Python313/site-packages/translate/__init__.py" type="text/plain"><tt>translate</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#translate.translate">translate.translate</a>
+ &#8226;   <a href="#translate.version">translate.version</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#app.py">app.py</a>
+ &#8226;   <a href="#translate.constants">translate.constants</a>
+ &#8226;   <a href="#translate.exceptions">translate.exceptions</a>
+ &#8226;   <a href="#translate.providers">translate.providers</a>
+ &#8226;   <a href="#translate.translate">translate.translate</a>
+ &#8226;   <a href="#translate.version">translate.version</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="translate.constants"></a>
+  <a target="code" href="///C:/Users/Allufy/AppData/Roaming/Python/Python313/site-packages/translate/constants.py" type="text/plain"><tt>translate.constants</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#translate">translate</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#translate.providers.base">translate.providers.base</a>
+ &#8226;   <a href="#translate.providers.deepl">translate.providers.deepl</a>
+ &#8226;   <a href="#translate.providers.microsoft">translate.providers.microsoft</a>
+ &#8226;   <a href="#translate.providers.yandex">translate.providers.yandex</a>
+ &#8226;   <a href="#translate.translate">translate.translate</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="translate.exceptions"></a>
+  <a target="code" href="///C:/Users/Allufy/AppData/Roaming/Python/Python313/site-packages/translate/exceptions.py" type="text/plain"><tt>translate.exceptions</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#translate">translate</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#translate.providers.deepl">translate.providers.deepl</a>
+ &#8226;   <a href="#translate.providers.libre">translate.providers.libre</a>
+ &#8226;   <a href="#translate.providers.microsoft">translate.providers.microsoft</a>
+ &#8226;   <a href="#translate.providers.mymemory_translated">translate.providers.mymemory_translated</a>
+ &#8226;   <a href="#translate.providers.yandex">translate.providers.yandex</a>
+ &#8226;   <a href="#translate.translate">translate.translate</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="translate.providers"></a>
+  <a target="code" href="///C:/Users/Allufy/AppData/Roaming/Python/Python313/site-packages/translate/providers/__init__.py" type="text/plain"><tt>translate.providers</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#translate">translate</a>
+ &#8226;   <a href="#translate.providers.deepl">translate.providers.deepl</a>
+ &#8226;   <a href="#translate.providers.libre">translate.providers.libre</a>
+ &#8226;   <a href="#translate.providers.microsoft">translate.providers.microsoft</a>
+ &#8226;   <a href="#translate.providers.mymemory_translated">translate.providers.mymemory_translated</a>
+ &#8226;   <a href="#translate.providers.yandex">translate.providers.yandex</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#translate.providers.base">translate.providers.base</a>
+ &#8226;   <a href="#translate.providers.deepl">translate.providers.deepl</a>
+ &#8226;   <a href="#translate.providers.libre">translate.providers.libre</a>
+ &#8226;   <a href="#translate.providers.microsoft">translate.providers.microsoft</a>
+ &#8226;   <a href="#translate.providers.mymemory_translated">translate.providers.mymemory_translated</a>
+ &#8226;   <a href="#translate.providers.yandex">translate.providers.yandex</a>
+ &#8226;   <a href="#translate.translate">translate.translate</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="translate.providers.base"></a>
+  <a target="code" href="///C:/Users/Allufy/AppData/Roaming/Python/Python313/site-packages/translate/providers/base.py" type="text/plain"><tt>translate.providers.base</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#abc">abc</a>
+ &#8226;   <a href="#requests">requests</a>
+ &#8226;   <a href="#translate.constants">translate.constants</a>
+ &#8226;   <a href="#translate.providers">translate.providers</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#translate.providers.deepl">translate.providers.deepl</a>
+ &#8226;   <a href="#translate.providers.libre">translate.providers.libre</a>
+ &#8226;   <a href="#translate.providers.microsoft">translate.providers.microsoft</a>
+ &#8226;   <a href="#translate.providers.mymemory_translated">translate.providers.mymemory_translated</a>
+ &#8226;   <a href="#translate.providers.yandex">translate.providers.yandex</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="translate.providers.deepl"></a>
+  <a target="code" href="///C:/Users/Allufy/AppData/Roaming/Python/Python313/site-packages/translate/providers/deepl.py" type="text/plain"><tt>translate.providers.deepl</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#json">json</a>
+ &#8226;   <a href="#requests">requests</a>
+ &#8226;   <a href="#translate.constants">translate.constants</a>
+ &#8226;   <a href="#translate.exceptions">translate.exceptions</a>
+ &#8226;   <a href="#translate.providers">translate.providers</a>
+ &#8226;   <a href="#translate.providers.base">translate.providers.base</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#translate.providers">translate.providers</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="translate.providers.libre"></a>
+  <a target="code" href="///C:/Users/Allufy/AppData/Roaming/Python/Python313/site-packages/translate/providers/libre.py" type="text/plain"><tt>translate.providers.libre</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#libretranslatepy">libretranslatepy</a>
+ &#8226;   <a href="#translate.exceptions">translate.exceptions</a>
+ &#8226;   <a href="#translate.providers">translate.providers</a>
+ &#8226;   <a href="#translate.providers.base">translate.providers.base</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#translate.providers">translate.providers</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="translate.providers.microsoft"></a>
+  <a target="code" href="///C:/Users/Allufy/AppData/Roaming/Python/Python313/site-packages/translate/providers/microsoft.py" type="text/plain"><tt>translate.providers.microsoft</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#json">json</a>
+ &#8226;   <a href="#requests">requests</a>
+ &#8226;   <a href="#translate.constants">translate.constants</a>
+ &#8226;   <a href="#translate.exceptions">translate.exceptions</a>
+ &#8226;   <a href="#translate.providers">translate.providers</a>
+ &#8226;   <a href="#translate.providers.base">translate.providers.base</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#translate.providers">translate.providers</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="translate.providers.mymemory_translated"></a>
+  <a target="code" href="///C:/Users/Allufy/AppData/Roaming/Python/Python313/site-packages/translate/providers/mymemory_translated.py" type="text/plain"><tt>translate.providers.mymemory_translated</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#requests">requests</a>
+ &#8226;   <a href="#translate.exceptions">translate.exceptions</a>
+ &#8226;   <a href="#translate.providers">translate.providers</a>
+ &#8226;   <a href="#translate.providers.base">translate.providers.base</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#translate.providers">translate.providers</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="translate.providers.yandex"></a>
+  <a target="code" href="///C:/Users/Allufy/AppData/Roaming/Python/Python313/site-packages/translate/providers/yandex.py" type="text/plain"><tt>translate.providers.yandex</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#json">json</a>
+ &#8226;   <a href="#requests">requests</a>
+ &#8226;   <a href="#translate.constants">translate.constants</a>
+ &#8226;   <a href="#translate.exceptions">translate.exceptions</a>
+ &#8226;   <a href="#translate.providers">translate.providers</a>
+ &#8226;   <a href="#translate.providers.base">translate.providers.base</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#translate.providers">translate.providers</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="translate.translate"></a>
+  <a target="code" href="///C:/Users/Allufy/AppData/Roaming/Python/Python313/site-packages/translate/translate.py" type="text/plain"><tt>translate.translate</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#textwrap">textwrap</a>
+ &#8226;   <a href="#translate">translate</a>
+ &#8226;   <a href="#translate.constants">translate.constants</a>
+ &#8226;   <a href="#translate.exceptions">translate.exceptions</a>
+ &#8226;   <a href="#translate.providers">translate.providers</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#translate">translate</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="translate.version"></a>
+  <a target="code" href="///C:/Users/Allufy/AppData/Roaming/Python/Python313/site-packages/translate/version.py" type="text/plain"><tt>translate.version</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#translate">translate</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#translate">translate</a>
 
   </div>
 
@@ -72542,6 +72782,7 @@ imported by:
 imported by:
     <a href="#email._header_value_parser">email._header_value_parser</a>
  &#8226;   <a href="#fastjsonschema.ref_resolver">fastjsonschema.ref_resolver</a>
+ &#8226;   <a href="#libretranslatepy.api">libretranslatepy.api</a>
  &#8226;   <a href="#matplotlib.image">matplotlib.image</a>
  &#8226;   <a href="#urllib.error">urllib.error</a>
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
@@ -72602,6 +72843,7 @@ imported by:
  &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
  &#8226;   <a href="#jsonschema._utils">jsonschema._utils</a>
  &#8226;   <a href="#jsonschema.validators">jsonschema.validators</a>
+ &#8226;   <a href="#libretranslatepy.api">libretranslatepy.api</a>
  &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#matplotlib.image">matplotlib.image</a>
  &#8226;   <a href="#matplotlib.textpath">matplotlib.textpath</a>
@@ -72689,6 +72931,7 @@ imported by:
  &#8226;   <a href="#fastjsonschema.ref_resolver">fastjsonschema.ref_resolver</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#jsonschema.validators">jsonschema.validators</a>
+ &#8226;   <a href="#libretranslatepy.api">libretranslatepy.api</a>
  &#8226;   <a href="#matplotlib">matplotlib</a>
  &#8226;   <a href="#numpy.lib._datasource">numpy.lib._datasource</a>
  &#8226;   <a href="#pygments.lexers._lua_builtins">pygments.lexers._lua_builtins</a>
@@ -74329,7 +74572,7 @@ imported by:
   <a target="code" href="///C:/Users/Allufy/AppData/Roaming/Python/Python313/site-packages/wcwidth/wcwidth.py" type="text/plain"><tt>wcwidth.wcwidth</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#'backports.functools_lru_cache'">'backports.functools_lru_cache'</a>
+    <a href="#'setuptools._vendor.backports.functools_lru_cache'">'setuptools._vendor.backports.functools_lru_cache'</a>
  &#8226;   <a href="#__future__">__future__</a>
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#os">os</a>

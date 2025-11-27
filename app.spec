@@ -4,8 +4,8 @@
 a = Analysis(
     ['app.py'],
     pathex=[],
-    binaries=[],
-    datas=[('templates', 'templates'), ('static', 'static'), ('mkvtoolnix', 'mkvtoolnix')],
+    binaries=[('ffmpeg/ffmpeg.exe', 'ffmpeg'), ('ffmpeg/ffprobe.exe', 'ffmpeg'), ('mkvtoolnix/mkvextract.exe', 'mkvtoolnix'), ('mkvtoolnix/mkvinfo.exe', 'mkvtoolnix')],
+    datas=[('templates', 'templates'), ('static', 'static')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -22,7 +22,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='app',
+    name='MKV Media Processor',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -35,4 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon='static/app.ico',
 )
